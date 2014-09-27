@@ -205,3 +205,49 @@ textarea[contenteditable] {
        only screen and (min-resolution: 144dpi) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.notify {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.notification {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 80px;
+  color: #333;
+  margin: 0;
+}
+.wtf,
+.smile,
+.sorry {
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  flex: 1 0 auto;
+  color: white;
+  text-align: center;
+}
+.wtf {
+  background: #D0021B url(../img/wtf.svg) no-repeat 50% 50% / 80% auto;
+}
+.smile {
+  background: #F5A623 url(../img/smiley.svg) no-repeat 50% 50% / 40% auto;
+}
+.sorry {
+  background: #5387C4 url(../img/sorry.svg) no-repeat 50% 52% / 80% auto;
+}
